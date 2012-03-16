@@ -1,0 +1,9 @@
+class UsuariosRols < ActiveRecord::Migration
+  def change
+    create_table :usariosRols do |t|
+      t.references :usuario
+      t.references :rol
+      t.timestamps
+    end
+  end
+end
